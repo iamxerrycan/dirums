@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.taskContainer {
+  padding: 50px;
+  margin: 20px;
+}
+
+.lopTaskHeading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lopTaskHeading img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.lopTaskHeading p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.taskDivFlex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.taskStart,
+.taskInProgress,
+.taskDone {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  height: 300px;
+}
+
+#taskHeadingg {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.taskCard {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.taskCard h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.taskCard h4 {
+  font-size: 16px;
+  color: #000000;
+}
+
+.taskCard p {
+  font-size: 14px;
+  color: #666;
+}
+
+.popeditTaskcontentss {
+  position: absolute;
+  top: 260px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 16px;
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.vertical-linet {
+  height: 40px;
+  width: 2px;
+  background-color: #cac5c5;
+  margin: 0 10px;
+}
+
+.horiLine {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.taskContainer {
+  padding: 20px;
+  margin: 10px;
+}
+
+.lopTaskHeading p {
+  font-size: 20px;
+}
+
+.taskDivFlex {
+  flex-direction: column;
+}
+
+.taskStart,
+.taskInProgress,
+.taskDone {
+  margin-bottom: 20px;
+  height: auto;
+  height: 330px;
+}
+
+@media (min-width: 768px) {
+  .taskContainer {
+    padding: 50px;
+    margin: 20px;
+  }
+
+  .lopTaskHeading p {
+    font-size: 24px;
+  }
+
+  .taskDivFlex {
+    flex-direction: row;
+  }
+
+  .taskStart,
+  .taskInProgress,
+  .taskDone {
+    flex: 1;
+    margin-bottom: 0;
+    width: 330px;
+  }
+}

@@ -1,0 +1,130 @@
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskPopup {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 400px;
+}
+.taskPopup h2{
+  color: black;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black; 
+}
+
+textarea,
+input[type="date"],
+.checkboxLabel {
+  width: 100%;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px; 
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  color: black; 
+}
+
+.checkboxLabel input[type="radio"] {
+  margin-right: 5px;
+}
+
+.status {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black; 
+}
+
+.popupButtons {
+  text-align: left;
+}
+
+.popupButtons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardSame {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex: 1;
+  margin-right: 10px; 
+}
+
+.cardSame input,
+.cardSame textarea {
+  flex: 2; 
+  padding: 5px; 
+}
+
+.checkboxContainer {
+  display: flex; 
+  align-items: center;
+}
+textarea {
+  width: 100%;            
+  height: 150px;         
+  border-radius: 10px;
+background: #E7E7E7;
+  border-radius: 4px;
+  resize: none !important;  
+  border-style: none;     
+}
+
+@media (max-width: 600px) {
+  .taskPopup {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .popupButtons button {
+    width: 100%;
+  }
+
+  .cardSame {
+    flex-direction: column;
+  }
+
+  .cardSame input,
+  .cardSame textarea {
+    width: 100%;
+    margin-right: 0;
+  }
+}

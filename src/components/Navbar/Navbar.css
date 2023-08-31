@@ -1,0 +1,135 @@
+.navbar {
+  background-color: #ccd5e1;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important; /* Add this line to make the Navbar full-width */
+  overflow: hidden !important; /* Add this line to hide any overflowing content */
+}
+
+.navbarContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.buttonplus {
+  background-color: #219ebc;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.buttonplus svg {
+  fill: white;
+  margin-right: 5px;
+  color: white;
+  
+}
+
+#searchBorder {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 5px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin-right: 23px;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: black;
+  padding: 5px;
+  font-size: smaller;
+}
+
+.navbarLogo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 30px;
+  position: relative;
+  right: 28px;
+  top: 3px;
+}
+
+.iconMenu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  background-color: #219ebc;
+}
+
+.searchIcon {
+  background-color: #219ebc;
+  padding: 7.5px;
+  border-end-end-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.verticalLine {
+  height: 40px;
+  width: 2px;
+  background-color: #000000;
+  margin: 0 10px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .navbarContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbarLeft {
+    margin-bottom: 20px;
+  }
+  
+  .buttonplus,
+  #searchBorder,
+  .searchIcon,
+  .navbarLogo img,
+  .iconMenu {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .username{
+    margin-right: 23px;
+    margin-bottom: 4px;
+  }
+
+}
